@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <mat-grid-list cols="4" [gutterSize]="'20px'" rowHeight="1:1.25">
+      <ng-container *ngFor="let product of productList">
+      <mat-grid-tile>
+        <div class="card">
+        <img src="{{product.image}}" alt="{{product.name}}">
+        <h4 style="white-space: nowrap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{product.name}}</h4>
+        <p style="white-space: nowrap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{product.description}}</p>
+        <p><strong>Price: </strong>₱{{product.price}}</p>
+        <p><strong>Weight: </strong>{{product.weight}}</p>
+        <button mat-raised-button color="primary" (click)="addToCart(product)">Add to Cart</button>
+      </div>
+      </mat-grid-tile>
+    </ng-container>
+    </mat-grid-list>
+  </div>
+</div>

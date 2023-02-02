@@ -1,0 +1,70 @@
+<table mat-table [dataSource]="productsList" class="mat-elevation-z8" *ngIf="productsList.length != 0">
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef>Serial Number</th>
+    <td mat-cell *matCellDef="let element; let i = index">{{i+1}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef>Product Name</th>
+    <td mat-cell *matCellDef="let element">{{element.name}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="image">
+    <th mat-header-cell *matHeaderCellDef>Product Image</th>
+    <td mat-cell *matCellDef="let element"><img style="width: 120px;"src={{element.image}}></td>
+  </ng-container>
+
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef>Description</th>
+    <td mat-cell *matCellDef="let element">{{element.description}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="price">
+    <th mat-header-cell *matHeaderCellDef>Price</th>
+    <td mat-cell *matCellDef="let element">{{element.price}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="quantity">
+    <th mat-header-cell *matHeaderCellDef>Quantity</th>
+    <td mat-cell *matCellDef="let element">
+      <button (click)="reduceQuantity(element)" mat-icon-button color="warn">
+        <mat-icon>remove</mat-icon>
+      </button>
+      {{element.quantity}}
+      <button (click)="addQuantity(element)" mat-icon-button color="primary">
+        <mat-icon>add</mat-icon>
+      </button>
+  </ng-container>
+
+  <ng-container matColumnDef="total">
+    <th mat-header-cell *matHeaderCellDef>Total</th>
+    <td mat-cell *matCellDef="let element">{{element.total}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="delete">
+    <th mat-header-cell *matHeaderCellDef>Delete</th>
+    <td mat-cell *matCellDef="let element">
+      <button (click)="delete(element)" mat-fab color="warn">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+  <article class="table-footer" *ngIf="productsList.length != 0">
+    <button (click)="emptyCart()" class="button-delete" mat-button>Empty Cart</button>
+    <button (click)="shopMore()" class="button-shop" mat-button>Shop More</button>
+    <button class="button-add" mat-button>Checkout</button>
+    <strong>Grand Total: {{grandTotal| currency:'PHP':'symbol'}}</strong>
+  </article>
+
+
+<ng-container *ngIf="productsList.length == 0">
+  <div class="center">
+    <h4>Your Cart is Empty</h4>
+    <h6>Add Item to It</h6>
+    <button class="button-shop" mat-button (click)="shopMore()">Shop Now</button>
+  </div>
+</ng-container>

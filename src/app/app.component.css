@@ -1,0 +1,28 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar {
+  color: white;
+  background-color: #95bb72;
+}
+
+.mat-sidenav-container {
+  position: relative !important;
+  height: 100%;
+  overflow: auto;
+}
+
+.mat-sidenav {
+  width: 300px;
+  background-color: white;
+}
+
+.mat-sidenav-content{
+  margin-left: 0 !important;
+  flex: 1 1 auto;
+
+}
+
+/* .icon-display {
+  transform: scale(2);
+} */
