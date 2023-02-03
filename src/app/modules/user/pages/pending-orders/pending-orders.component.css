@@ -1,0 +1,42 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.h4,.h6 {
+  font-weight: 400;
+}
+
+.table {
+  width: 80%;
+}
+
+.table-footer {
+  width: 90%;
+  margin: auto;
+  text-align: right;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-add {
+  background: #1b9e1b;
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.button-shop {
+  background: #F9E076;
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.button-delete {
+  background: red;
+  color: #ffffff;
+  margin-right: 5px;
+}

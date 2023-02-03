@@ -18,8 +18,8 @@ export class AdminPageComponent {
   }
   userList: any
   dataSource: any
-  @ViewChild(MatPaginator) paginator !:MatPaginator
-  @ViewChild(MatSort) sort !:MatSort
+  @ViewChild( MatPaginator) paginator !:MatPaginator
+  @ViewChild( MatSort) sort !:MatSort
 
   LoadUser(){
     this.auth.getAll().subscribe(user => {

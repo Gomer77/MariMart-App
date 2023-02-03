@@ -30,6 +30,12 @@ import { ContactPageComponent } from './shared/contact-page/contact-page.compone
 import { ProductsComponent } from './shared/products/products.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatBadgeModule } from '@angular/material/badge';
+import { FormsModule } from '@angular/forms';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { CategoryfilterPipe } from './shared/pipe/categoryfilter.pipe';
+import { PricefilterPipe } from './shared/pipe/pricefilter.pipe';
+import { SortfilterPipe } from './shared/pipe/sortfilter.pipe';
+
 
 
 @NgModule({
@@ -41,6 +47,10 @@ import { MatBadgeModule } from '@angular/material/badge';
     AboutPageComponent,
     ContactPageComponent,
     ProductsComponent,
+    CategoryfilterPipe,
+    PricefilterPipe,
+    SortfilterPipe,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +58,7 @@ import { MatBadgeModule } from '@angular/material/badge';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatMenuModule,
+    MatButtonToggleModule,
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
@@ -56,6 +67,7 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatRadioModule,
     MatCheckboxModule,
     MatTableModule,
+    FormsModule,
     MatPaginatorModule,
     MatSortModule,
     MatDialogModule,

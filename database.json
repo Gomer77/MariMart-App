@@ -10,74 +10,11 @@
       "status": true
     },
     {
-      "id": "Gomer08",
-      "name": "Gomer Carillo",
-      "password": "gomercarillo",
-      "email": "gomercarillo161@gmail.com",
-      "number": "09568868170",
-      "role": "customer",
-      "status": false
-    },
-    {
       "id": "test1",
-      "name": "John Smith",
-      "password": "1234",
-      "email": "test1@gmail.com",
-      "number": "09568868170",
-      "role": "support",
-      "status": true
-    },
-    {
-      "id": "test2",
-      "name": "John Doe",
-      "password": "1234",
-      "email": "test2@gmail.com",
-      "number": "09568868170",
-      "role": "customer",
-      "status": true
-    },
-    {
-      "id": "test3",
-      "name": "Jogn Anonymous",
-      "password": "1234",
-      "email": "test3@gmail.com",
-      "number": "09568868170",
-      "role": "customer",
-      "status": true
-    },
-    {
-      "id": "test4",
-      "name": "Logan Gary",
-      "password": "1234",
-      "email": "test4@gmail.com",
-      "number": "09568868170",
-      "role": "",
-      "status": true
-    },
-    {
-      "id": "test5",
-      "name": "Bele Harry",
-      "password": "1234",
-      "email": "test5@gmail.com",
-      "number": "09568868170",
-      "role": "",
-      "status": true
-    },
-    {
-      "id": "king1234",
-      "name": "king",
-      "password": "king1234",
-      "email": "king@gmail.com",
-      "number": "09656684752",
-      "role": "customer",
-      "status": true
-    },
-    {
-      "id": "king12",
-      "name": "king",
+      "name": "test",
       "password": "123456",
-      "email": "king@gmail.com",
-      "number": "62564789654",
+      "email": "test@gmail.com",
+      "number": "09568868170",
       "role": "customer",
       "status": true
     }
@@ -104,8 +41,8 @@
       "price": 292,
       "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/onion_red_c7fe9b0d-a191-49e5-8aac-c61f5f09115e_350x.jpg?v=1668482222",
       "weight": "1 kg",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Fresh Produce"
     },
     {
@@ -115,8 +52,8 @@
       "price": 114,
       "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/cabbage_5376e955-60ac-49ea-a1a6-240ab02c17b4_170x.png?v=1668482299",
       "weight": "600g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Fresh Produce"
     },
     {
@@ -126,8 +63,8 @@
       "price": 104,
       "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/eggplant_183b4189-5f74-4e09-b9f5-15f14d28febf_170x.png?v=1668482271",
       "weight": "1/2 kg",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Fresh Produce"
     },
     {
@@ -137,8 +74,8 @@
       "price": 300,
       "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/banana-regular_c75f3a40-0d9a-4711-9364-2daf942d90e5_350x.png?v=1662038193",
       "weight": "1 Piling (1.8kg-2.2kg)",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Fresh Produce"
     },
     {
@@ -148,8 +85,8 @@
       "price": 73,
       "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/lemon2_350x.png?v=1662038264",
       "weight": "1/2 kg",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Fresh Produce"
     },
     {
@@ -159,8 +96,8 @@
       "price": 335,
       "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/chickenbreastfillet_170x.png?v=1654351203",
       "weight": "1 kg",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Fresh Meat and Seafood"
     },
     {
@@ -170,8 +107,8 @@
       "price": 195,
       "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/chickendrumsticks_350x.png?v=1654351209",
       "weight": "1 kg",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Fresh Meat and Seafood"
     },
     {
@@ -181,8 +118,8 @@
       "price": 210,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/338038_eda8ef56-49f1-4402-a7bd-1395d4f332d8_512x.jpg?v=1669178187",
       "weight": "500g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Fresh Meat and Seafood"
     },
     {
@@ -192,8 +129,8 @@
       "price": 80,
       "image": "https://cdn.shopify.com/s/files/1/0024/9695/4415/products/IMG_7762_1024x1024.jpg?v=1664275949",
       "weight": "1/2 kg",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Fresh Meat and Seafood"
     },
     {
@@ -203,8 +140,8 @@
       "price": 429,
       "image": "https://cdn.shopify.com/s/files/1/0423/3674/7669/products/Suahe_1080x.jpg?v=1641874236",
       "weight": "1 kg",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Fresh Meat and Seafood"
     },
     {
@@ -214,8 +151,8 @@
       "price": 106,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/429216_5fe4f532-cc83-4b62-bb41-2ec4dc88df5b_395x395.jpg?v=1670373292",
       "weight": "450g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Frozen Goods"
     },
     {
@@ -225,8 +162,8 @@
       "price": 154.75,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/566547_816ae6de-5903-45ff-8bab-042cc01b6a8c_512x.jpg?v=1652343431",
       "weight": "450g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Frozen Goods"
     },
     {
@@ -236,8 +173,8 @@
       "price": 92,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/426762_42474a6e-e1fc-47fa-8036-276cb307580e_395x395.jpg?v=1622180862",
       "weight": "270g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Frozen Goods"
     },
     {
@@ -247,8 +184,8 @@
       "price": 192,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/109761_f4d47147-d76d-46da-9961-3ce36fb90b06_255x255.jpg?v=1621400264",
       "weight": "450g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Frozen Goods"
     },
     {
@@ -258,8 +195,8 @@
       "price": 168,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/111237_e7f39828-9108-4619-a236-79e990c6dc9f_512x.jpg?v=1622182323",
       "weight": "200g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Frozen Goods"
     },
     {
@@ -269,8 +206,8 @@
       "price": 82,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/113901_97467e99-41d6-42e1-8a0e-2981b785d615_500x500.jpg?v=1658472815",
       "weight": "600g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Bakery"
     },
     {
@@ -280,8 +217,8 @@
       "price": 32,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/134110_7464edcb-ca9c-4773-9fd0-238ffeec7c69_508x508.jpg?v=1658472701",
       "weight": "300g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Bakery"
     },
     {
@@ -291,8 +228,8 @@
       "price": 71.5,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/566276_d12d6233-09f0-41c1-a190-d96912ebb91b_508x508.jpg?v=1658480076",
       "weight": "23g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Bakery"
     },
     {
@@ -302,8 +239,8 @@
       "price": 55,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/113930_68809387-a886-4436-97d5-8522f4870bbf_512x.jpg?v=1622179146",
       "weight": "10s",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Bakery"
     },
     {
@@ -313,8 +250,8 @@
       "price": 75.5,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/112161_04abeaf2-3f05-442e-8bde-9347e99cdd98_512x.jpg?v=1629823600",
       "weight": "360g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Bakery"
     },
     {
@@ -324,8 +261,8 @@
       "price": 84.5,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/105696_441f3863-0fd7-48ec-8b70-20b523a92d31_396x344.jpg?v=1622182865",
       "weight": "250g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Chilled and dairy items"
     },
     {
@@ -335,8 +272,8 @@
       "price": 40.25,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/105524_a213cadc-6a5e-499d-9f77-608489fef8a6_512x.jpg?v=1629822514",
       "weight": "100g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Chilled and dairy items"
     },
     {
@@ -346,8 +283,8 @@
       "price": 153,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/435519_e9cb4da1-feeb-4166-9702-9e2e0bd49cc2_512x.jpg?v=1672715298",
       "weight": "12s",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Chilled and dairy items"
     },
     {
@@ -357,8 +294,8 @@
       "price": 50,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/390936_5875a56a-7153-4670-8a62-1958d417fa6f_512x.jpg?v=1657002793",
       "weight": "165g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Chilled and dairy items"
     },
     {
@@ -368,8 +305,8 @@
       "price": 202,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/584671_fedc2d13-13b8-4e1d-b436-800b1ce085cd_512x.jpg?v=1629948794",
       "weight": "400g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Chilled and dairy items"
     },
     {
@@ -379,8 +316,8 @@
       "price": 57,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/433082_ce8949b6-dc23-43c9-9693-a944c7055702_512x.jpg?v=1635237924",
       "weight": "260g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Pantry"
     },
     {
@@ -390,8 +327,8 @@
       "price": 66.75,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/438996_8d46fc9f-3a6a-4970-beed-fb1dbbf0e37c_512x.jpg?v=1621405939",
       "weight": "200ml",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Pantry"
     },
     {
@@ -401,8 +338,8 @@
       "price": 75,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/420186_40b36d04-e1fc-4e15-9691-df185e647467_512x.jpg?v=1622181509",
       "weight": "425g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Pantry"
     },
     {
@@ -412,8 +349,8 @@
       "price": 351,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/196510_b83f19a9-feb2-4f58-a9dd-cfc97c1be427_512x.jpg?v=1662377625",
       "weight": "500ml",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Pantry"
     },
     {
@@ -423,8 +360,8 @@
       "price": 35.5,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/158387_512x.jpg?v=1629822219",
       "weight": "165g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Pantry"
     },
     {
@@ -434,8 +371,8 @@
       "price": 7.35,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/320132_bcf44d0b-05cd-44f1-8490-02900b625683_512x.jpg?v=1621406324",
       "weight": "32g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Snacks"
     },
     {
@@ -445,8 +382,8 @@
       "price": 123,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/375895_a4e82cae-967b-44b5-98d0-a4102946bf14_512x.jpg?v=1622184907",
       "weight": "100g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Snacks"
     },
     {
@@ -456,8 +393,8 @@
       "price": 30.75,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/401045_d33e2282-8d85-4d17-a6ec-4dd7361ddfe8_512x.jpg?v=1622185478",
       "weight": "45g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Snacks"
     },
     {
@@ -467,8 +404,8 @@
       "price": 20.25,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/591635_0cdf5439-b808-41c7-aa75-c242e1b52131_512x.jpg?v=1659064236",
       "weight": "100g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Snacks"
     },
     {
@@ -478,8 +415,8 @@
       "price": 145.75,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/561579_7783d7cc-a23b-43f7-bca8-18c2d5195018_512x.jpg?v=1621404099",
       "weight": "142g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Snacks"
     },
     {
@@ -489,8 +426,8 @@
       "price": 36,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/329806_7c99aa1c-e351-4f0e-925f-50799faacf52_512x.jpg?v=1673610576",
       "weight": "325ml",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Beverages"
     },
     {
@@ -500,8 +437,8 @@
       "price": 76.25,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/352070_3eba681b-5bf8-4318-8c30-7af4352f23ca_512x.jpg?v=1658117708",
       "weight": "2L",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Beverages"
     },
     {
@@ -511,8 +448,8 @@
       "price": 88,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/556548_8b63a435-fb07-4aec-b7c8-0f0ac551e7d0_512x.jpg?v=1654482112",
       "weight": "7000ml",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Beverages"
     },
     {
@@ -522,8 +459,8 @@
       "price": 19.25,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/587738_19381d23-da9b-4c15-a71b-8538040ed693_512x.jpg?v=1629827183",
       "weight": "20g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Beverages"
     },
     {
@@ -533,8 +470,8 @@
       "price": 60,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/669840_c719a8e5-df0a-4f21-90f9-1a493331feeb_512x.jpg?v=1669947029",
       "weight": "330ml",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Beverages"
     },
     {
@@ -544,8 +481,8 @@
       "price": 209,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/666958_17ff2c49-15e9-4c59-bbf3-666c680ed0bf_512x.jpg?v=1646882871",
       "weight": "60 Sheets",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Home care"
     },
     {
@@ -555,8 +492,8 @@
       "price": 69,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/534744_77b69b5b-9f9b-4b3e-8222-f435e3d63267_512x.jpg?v=1641473047",
       "weight": "40 Sheets",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Home care"
     },
     {
@@ -566,8 +503,8 @@
       "price": 99,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/552736_b851d2c2-c702-4ff7-95aa-cfd905101c13_512x.jpg?v=1641473065",
       "weight": "40 Sheets",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Home care"
     },
     {
@@ -577,8 +514,8 @@
       "price": 166.95,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/662324_4de46c5e-edfe-4dab-afe6-25b9115b7d10_512x.jpg?v=1641290229",
       "weight": "520ml",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Home care"
     },
     {
@@ -588,8 +525,8 @@
       "price": 204.5,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/662320_be9221d2-62c9-406e-80ea-b204e0d3fb79_512x.jpg?v=1641290265",
       "weight": "1.5L",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Home care"
     },
     {
@@ -599,8 +536,8 @@
       "price": 73,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/381470_6e48cda4-0281-44f3-b546-faea38d33888_512x.jpg?v=1629820949",
       "weight": "80g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Baby and kids"
     },
     {
@@ -610,8 +547,8 @@
       "price": 99,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/550495_eb7b79f1-fb01-440b-9c14-a9f5467ad47e_512x.jpg?v=1629820932",
       "weight": " 50g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Baby and kids"
     },
     {
@@ -621,8 +558,8 @@
       "price": 499,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/358814_d122aea9-b119-4b69-90c8-8a7c64d385f3_512x.jpg?v=1629821041",
       "weight": "700g",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Baby and kids"
     },
     {
@@ -632,8 +569,8 @@
       "price": 356.5,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/679241_b3e456f0-9d03-46c7-b249-222eea0b5f39_512x.jpg?v=1660802629",
       "weight": "32s",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Baby and kids"
     },
     {
@@ -643,35 +580,111 @@
       "price": 304.5,
       "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/668721_97bb82e3-658b-4966-be6f-323b4cf5731f_512x.jpg?v=1658135139",
       "weight": "375ml",
-      "stocks": 10,
-      "sold": 0,
+      "stock": 10,
+      "totalItemSale": 0,
       "category": "Baby and kids"
+    },
+    {
+      "id": "V1nSqIB",
+      "name": "",
+      "description": "",
+      "price": "",
+      "image": "",
+      "weight": "",
+      "stock": 0,
+      "totalItemSale": 0,
+      "category": ""
+    },
+    {
+      "id": "nTnzpwr",
+      "name": "",
+      "description": "",
+      "price": "",
+      "image": "",
+      "weight": "",
+      "stock": 0,
+      "totalItemSale": 0,
+      "category": ""
     }
   ],
   "cart": [
     {
       "id": 1,
-      "user_id": "test3",
-      "name": "Baby Bath Refill",
-      "description": "Johnson's Cotton Touch Hair and Body Baby Bath Refill",
-      "price": 304.5,
-      "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/668721_97bb82e3-658b-4966-be6f-323b4cf5731f_512x.jpg?v=1658135139",
-      "weight": "375ml",
-      "quantity": 1,
-      "status": "",
-      "total": 0
-    },
-    {
-      "id": "2",
-      "user_id": "test3",
-      "name": "Baby Diaper",
-      "description": "Assure Pants Baby Diaper Large",
-      "price": 356.5,
-      "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/679241_b3e456f0-9d03-46c7-b249-222eea0b5f39_512x.jpg?v=1660802629",
-      "weight": "32s",
-      "quantity": 1,
-      "status": "",
-      "total": 0
+      "username": "test1",
+      "orders": [
+        {
+          "id": "3",
+          "name": "Eggplant",
+          "price": 104,
+          "description": "Little Finger Purple Eggplant",
+          "category": "Fresh Produce",
+          "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/eggplant_183b4189-5f74-4e09-b9f5-15f14d28febf_170x.png?v=1668482271",
+          "itemQuantity": 3,
+          "itemTotalPrice": 312
+        },
+        {
+          "id": "2",
+          "name": "Cabbage",
+          "price": 114,
+          "description": "Organic Green Cabbage",
+          "category": "Fresh Produce",
+          "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/cabbage_5376e955-60ac-49ea-a1a6-240ab02c17b4_170x.png?v=1668482299",
+          "itemQuantity": 4,
+          "itemTotalPrice": 456
+        },
+        {
+          "id": "5",
+          "name": "Lemon",
+          "price": 73,
+          "description": "Yellow Lemon",
+          "category": "Fresh Produce",
+          "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/lemon2_350x.png?v=1662038264",
+          "itemQuantity": 4,
+          "itemTotalPrice": 292
+        },
+        {
+          "id": "1",
+          "name": "Onion",
+          "price": 292,
+          "description": "Red Onion",
+          "category": "Fresh Produce",
+          "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/onion_red_c7fe9b0d-a191-49e5-8aac-c61f5f09115e_350x.jpg?v=1668482222",
+          "itemQuantity": 2,
+          "itemTotalPrice": 584
+        },
+        {
+          "id": "4",
+          "name": "Banana",
+          "price": 300,
+          "description": "Lakatan",
+          "category": "Fresh Produce",
+          "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/banana-regular_c75f3a40-0d9a-4711-9364-2daf942d90e5_350x.png?v=1662038193",
+          "itemQuantity": 1,
+          "itemTotalPrice": 300
+        },
+        {
+          "id": "9",
+          "name": "Tilapia",
+          "price": 80,
+          "description": "Fresh medium/large tilapia offers a distinct tasty flavor and fork-tender texture perfect for everyday meals.",
+          "category": "Fresh Meat and Seafood",
+          "image": "https://cdn.shopify.com/s/files/1/0024/9695/4415/products/IMG_7762_1024x1024.jpg?v=1664275949",
+          "itemQuantity": 1,
+          "itemTotalPrice": 80
+        },
+        {
+          "id": "8",
+          "name": "Pork",
+          "price": 210,
+          "description": "Liempo",
+          "category": "Fresh Meat and Seafood",
+          "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/338038_eda8ef56-49f1-4402-a7bd-1395d4f332d8_512x.jpg?v=1669178187",
+          "itemQuantity": 1,
+          "itemTotalPrice": 210
+        }
+      ],
+      "cartTotalQuantity": 16,
+      "grandTotal": 2234
     }
   ]
 }

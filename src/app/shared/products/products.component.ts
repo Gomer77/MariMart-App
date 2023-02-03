@@ -16,76 +16,46 @@ export class ProductsComponent implements OnInit {
     private toastr: ToastrService, private auth:AuthService,
     private router: Router){}
 
+  minPrice = 0
+  maxPrice = 0
   productList: any
-  userId: any
-  cartData: any
-  userCartData: any
+  searchKey: string = ""
+  filterByCategory: any
+  sortByParam = ''
+  sortByOrder = 'asc'
+  filterByPriceList: any
 
 
   ngOnInit(): void {
     this.productService.getProducts().subscribe(res => {
       this.productList = res
-      this.productList.forEach((a:any) => {
-        Object.assign(a,{quantity:1,total:a.price})
-      })
+      this.filterByCategory = res
+    })
+
+    this.cartService.search.subscribe((res:any) => {
+      this.searchKey = res
     })
   }
 
+  filter(category:string){
+    this.filterByCategory = this.productList.filter((a:any) => {
+      if(a.category === category || a.category === ''){
+        return a
+      }
+    })
+  }
+
+  resetFilterByPrice(){
+    this.minPrice = 0;
+    this.maxPrice = 0;
+  }
+
   addToCart(item: any){
-    this.userId = sessionStorage.getItem('username');
     if(this.auth.isLoggedIn()){
       this.toastr.success("Added to cart")
       this.cartService.addToCart(item)
     }else{
       this.router.navigate(['/login'])
     }
-  }
-
-  // addToCart(item:any){
-  //   this.userId = sessionStorage.getItem('username');
-  //   if(this.auth.isLoggedIn()){
-  //     this.allCartData()
-  //     for(let i = 0; i < this.cartData.length;i++){
-  //       if(this.cartData[i].id === this.userId){
-  //         this.userCartData.push(this.cartData[i])
-  //       }else{
-  //         //create a new cart for user
-  //         let newCart = {
-  //           id: this.cartData.length+1,
-  //           user_Id: this.userId,
-  //           name: item.name,
-  //           description: item.description,
-  //           price: item.price,
-  //           image: item.image,
-  //           weight: item.weight,
-  //           quantity: 1,
-  //           status: '',
-  //           total: item.total
-  //         }
-  //         this.cartService.postCart(newCart).subscribe({
-  //           next: (data) => {},
-  //           error:(err) => {
-  //             console.log(err)
-  //           }
-  //         })
-  //       }
-  //     }
-  //     this.toastr.success("Added to cart")
-  //     this.cartService.addToCart(item)
-  //   }else{
-  //     this.router.navigate(['/login'])
-  //   }
-  //   // console.log(item)
-  // }
-
-  allCartData(){
-    this.cartService.getCart().subscribe({
-      next:(data) => {
-        this.cartData = data
-      },
-      error:(err) => {
-        console.log(err)
-      }
-    })
   }
 }

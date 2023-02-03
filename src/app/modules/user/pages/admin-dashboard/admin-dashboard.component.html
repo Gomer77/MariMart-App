@@ -1,1 +1,21 @@
-<p>admin-dashboard works!</p>
+<h1 style="text-align: center">Top 5 Items Sold</h1>
+<ng-container >
+  <div class="container" *ngIf="productsList as products">
+    <div class="row">
+      <mat-grid-list cols="5" [gutterSize]="'20px'" rowHeight="1:1.25">
+        <ng-container *ngFor="let product of products | categoryfilter">
+        <mat-grid-tile>
+          <div class="card">
+          <img src="{{product.image}}" alt="{{product.name}}">
+          <h4 style="white-space: nowrap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{product.name}}</h4>
+          <p style="white-space: nowrap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{product.description}}</p>
+          <p><strong>Price: </strong>₱{{product.price}}</p>
+          <p><strong>Weight: </strong>{{product.weight}}</p>
+          <!-- <p><strong>Items Sold: </strong>{{product.totalItemSale}}</p> -->
+        </div>
+        </mat-grid-tile>
+      </ng-container>
+      </mat-grid-list>
+    </div>
+  </div>
+  </ng-container>

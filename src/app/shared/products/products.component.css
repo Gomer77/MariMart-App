@@ -21,6 +21,53 @@
   border: none;
 }
 
-/* mat-grid-tile {
-  background: lightgray;
-} */
+.top-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+  word-wrap: break-word;
+  background: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: .25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.category img{
+  width: 70px;
+  height: 70px;
+}
+
+.category img:hover {
+  transition: 0.1s ease-in-out;
+  transform: scale(1.1);
+  cursor:pointer;
+}
+
+.category {
+  margin: 0px 15px;
+  text-align: center;
+}
+
+.category a:hover{
+  color: blue;
+}
+
+.card-container {
+  align-items: center;
+  padding: 10px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.mat-grid-tile {
+  border: solid 2px #000;
+}
+
+.mat-grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center !important;
+}

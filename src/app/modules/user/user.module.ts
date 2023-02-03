@@ -22,6 +22,12 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { MatSortModule } from '@angular/material/sort';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { CategoryfilterPipe } from './pipe/categoryfilter.pipe';
+
+
 
 
 @NgModule({
@@ -34,11 +40,15 @@ import { MatInputModule } from '@angular/material/input';
     AdminPageComponent,
     ProductsPageComponent,
     UpdateDialogComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    CategoryfilterPipe
   ],
   imports: [
+    FormsModule,
     MatToolbarModule,
     MatDialogModule,
+    MatGridListModule,
+    MatSortModule,
     MatCheckboxModule,
     MatInputModule,
     MatButtonModule,

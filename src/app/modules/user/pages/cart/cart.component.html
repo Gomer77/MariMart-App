@@ -1,4 +1,4 @@
-<table mat-table [dataSource]="productsList" class="mat-elevation-z8" *ngIf="productsList.length != 0">
+<table mat-table matSort [dataSource]="productsList.orders" class="mat-elevation-z8" *ngIf="productsList.length != 0">
 
   <ng-container matColumnDef="id">
     <th mat-header-cell *matHeaderCellDef>Serial Number</th>
@@ -6,7 +6,7 @@
   </ng-container>
 
   <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef>Product Name</th>
+    <th mat-header-cell mat-sort-header *matHeaderCellDef>Product Name</th>
     <td mat-cell *matCellDef="let element">{{element.name}}</td>
   </ng-container>
 
@@ -21,7 +21,7 @@
   </ng-container>
 
   <ng-container matColumnDef="price">
-    <th mat-header-cell *matHeaderCellDef>Price</th>
+    <th mat-header-cell mat-sort-header *matHeaderCellDef>Price</th>
     <td mat-cell *matCellDef="let element">{{element.price}}</td>
   </ng-container>
 
@@ -31,7 +31,7 @@
       <button (click)="reduceQuantity(element)" mat-icon-button color="warn">
         <mat-icon>remove</mat-icon>
       </button>
-      {{element.quantity}}
+      <input style="width: 10%;"type="number" min="1" [(ngModel)]="element.itemQuantity" (change)="updateQuantity(element)">
       <button (click)="addQuantity(element)" mat-icon-button color="primary">
         <mat-icon>add</mat-icon>
       </button>
@@ -39,7 +39,7 @@
 
   <ng-container matColumnDef="total">
     <th mat-header-cell *matHeaderCellDef>Total</th>
-    <td mat-cell *matCellDef="let element">{{element.total}}</td>
+    <td mat-cell *matCellDef="let element">{{element.itemTotalPrice}}</td>
   </ng-container>
 
   <ng-container matColumnDef="delete">
@@ -53,15 +53,14 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
-  <article class="table-footer" *ngIf="productsList.length != 0">
+  <article class="table-footer" *ngIf="productsList.orders?.length != 0">
     <button (click)="emptyCart()" class="button-delete" mat-button>Empty Cart</button>
     <button (click)="shopMore()" class="button-shop" mat-button>Shop More</button>
-    <button class="button-add" mat-button>Checkout</button>
-    <strong>Grand Total: {{grandTotal| currency:'PHP':'symbol'}}</strong>
+    <button (click)="checkout()" class="button-add" mat-button>Checkout</button>
   </article>
 
 
-<ng-container *ngIf="productsList.length == 0">
+<ng-container *ngIf="productsList.orders?.length == 0">
   <div class="center">
     <h4>Your Cart is Empty</h4>
     <h6>Add Item to It</h6>

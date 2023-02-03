@@ -1,7 +1,125 @@
-<div class="container">
+<!-- Show Products by Category -->
+<mat-card>
+  <mat-card-header class="top-card">
+    <mat-card-title>Categories</mat-card-title>
+  </mat-card-header>
+</mat-card>
+<mat-card class="top-card">
+  <mat-card-actions class="category">
+    <a (click)="filter('')">
+      <img src="assets/images/all_products.png" alt="All products">
+      <h4>All Products</h4>
+    </a>
+  </mat-card-actions>
+
+  <mat-card-actions class="category">
+    <a (click)="filter('Fresh Meat and Seafood')">
+      <img src="assets/images/meat_seafood.png" alt="Fresh Meat and Seafood">
+      <h4>Fresh Meat and Seafood</h4>
+    </a>
+  </mat-card-actions>
+
+  <mat-card-actions class="category">
+    <a (click)="filter('Chilled and dairy items')">
+      <img src="assets/images/dairy.png" alt="Chilled and Dairy Items">
+      <h4>Chilled and Dairy Items</h4>
+    </a>
+  </mat-card-actions>
+
+  <mat-card-actions class="category">
+    <a (click)="filter('Bakery')">
+      <img src="assets/images/bakery.png" alt="Bakery">
+      <h4>Bakery</h4>
+    </a>
+  </mat-card-actions>
+
+  <mat-card-actions class="category">
+    <a (click)="filter('Beverages')">
+      <img src="assets/images/beverages.png" alt="Beverages">
+      <h4>Beverages</h4>
+    </a>
+  </mat-card-actions>
+
+  <mat-card-actions class="category">
+    <a (click)="filter('Snacks')">
+      <img src="assets/images/snacks.png" alt="Snacks">
+      <h4>Snacks</h4>
+    </a>
+  </mat-card-actions>
+
+  <mat-card-actions class="category">
+    <a (click)="filter('Fresh Produce')">
+      <img src="assets/images/fresh-produce.png" alt="Fresh Produce">
+      <h4>Fresh Produce</h4>
+    </a>
+  </mat-card-actions>
+
+  <mat-card-actions class="category">
+    <a (click)="filter('Frozen Goods')">
+      <img src="assets/images/frozen_goods.png" alt="Frozen Goods">
+      <h4>Frozen Goods</h4>
+    </a>
+  </mat-card-actions>
+
+  <mat-card-actions class="category">
+    <a (click)="filter('Pantry')">
+      <img src="assets/images/canned.png" alt="Pantry">
+      <h4>Pantry</h4>
+    </a>
+  </mat-card-actions>
+
+  <mat-card-actions class="category">
+    <a (click)="filter('Home care')">
+      <img src="assets/images/personal.png" alt="Home Care">
+      <h4>Home Care</h4>
+    </a>
+  </mat-card-actions>
+
+  <mat-card-actions class="category">
+    <a (click)="filter('Baby and kids')">
+      <img src="assets/images/baby.png" alt="Baby and Kids">
+      <h4>Baby and Kids</h4>
+    </a>
+  </mat-card-actions>
+</mat-card>
+
+<!-- Filter Buttons -->
+<mat-card class="card-container">
+  <mat-card-title class="card-container-right">Sort by</mat-card-title>
+  <mat-card-content>
+    <mat-form-field appearance="fill">
+      <select matNativeControl [(ngModel)]="sortByParam">
+        <option value="">Select</option>
+        <option value="name">Name</option>
+        <option value="price">Price</option>
+      </select>
+    </mat-form-field>
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style" [(ngModel)]="sortByOrder">
+      <mat-button-toggle value="asc">asc</mat-button-toggle>
+      <mat-button-toggle value="desc">desc</mat-button-toggle>
+    </mat-button-toggle-group>
+  </mat-card-content>
+
+  <mat-card-title class="card-container-left">Price Range</mat-card-title>
+  <mat-card-content>
+    <mat-form-field class="example-margin example-width" appearance="fill">
+      <mat-label>Min Price</mat-label>
+      <input matInput type="number" min="0" [(ngModel)]="minPrice">
+    </mat-form-field>
+    <mat-form-field class="example-margin example-width" appearance="fill">
+      <mat-label>Max Price</mat-label>
+      <input matInput type="number" min="0" [(ngModel)]="maxPrice">
+    </mat-form-field>
+    <button mat-button (click)="resetFilterByPrice()" color="warn">Clear</button>
+  </mat-card-content>
+</mat-card>
+
+<!-- Products -->
+<ng-container >
+<div class="container" *ngIf="(filterByCategory | categoryfilter:searchKey:['title', 'category']) as products">
   <div class="row">
-    <mat-grid-list cols="4" [gutterSize]="'20px'" rowHeight="1:1.25">
-      <ng-container *ngFor="let product of productList">
+    <mat-grid-list cols="5" [gutterSize]="'20px'" rowHeight="1:1.25">
+      <ng-container *ngFor="let product of products | pricefilter:[minPrice, maxPrice] | sortfilter:[sortByParam, sortByOrder]">
       <mat-grid-tile>
         <div class="card">
         <img src="{{product.image}}" alt="{{product.name}}">
@@ -16,3 +134,4 @@
     </mat-grid-list>
   </div>
 </div>
+</ng-container>

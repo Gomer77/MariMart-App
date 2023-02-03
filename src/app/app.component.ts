@@ -24,8 +24,8 @@ export class AppComponent implements DoCheck, OnInit{
 
   ngOnInit(): void {
     const id = sessionStorage.getItem('id')
-    this.cartService.getProduct().subscribe(res => {
-      this.totalItems = res.length
+    this.cartService.getTotalCount().subscribe(res => {
+      this.totalItems = res
     })
   }
 
