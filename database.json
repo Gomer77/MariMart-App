@@ -10,10 +10,46 @@
       "status": true
     },
     {
-      "id": "test1",
-      "name": "test",
+      "id": "admin2",
+      "name": "admin2",
       "password": "123456",
-      "email": "test@gmail.com",
+      "email": "admin2@gmail.com",
+      "number": "09568868170",
+      "role": "support",
+      "status": true
+    },
+    {
+      "id": "admin3",
+      "name": "admin3",
+      "password": "123456",
+      "email": "admin3@gmail.com",
+      "number": "09456321785",
+      "role": "support",
+      "status": true
+    },
+    {
+      "id": "gomer77",
+      "name": "gomer carillo",
+      "password": "gomercarillo333",
+      "email": "gomercarillo161@gmail.com",
+      "number": "09786512476",
+      "role": "customer",
+      "status": true
+    },
+    {
+      "id": "John77",
+      "name": "John Doe",
+      "password": "123456",
+      "email": "john@gmail.com",
+      "number": "09651235784",
+      "role": "customer",
+      "status": true
+    },
+    {
+      "id": "gomer04",
+      "name": "gomer carillo",
+      "password": "gomercarillo",
+      "email": "gomercarillo161@gmail.com",
       "number": "09568868170",
       "role": "customer",
       "status": true
@@ -583,34 +619,40 @@
       "stock": 10,
       "totalItemSale": 0,
       "category": "Baby and kids"
-    },
-    {
-      "id": "V1nSqIB",
-      "name": "",
-      "description": "",
-      "price": "",
-      "image": "",
-      "weight": "",
-      "stock": 0,
-      "totalItemSale": 0,
-      "category": ""
-    },
-    {
-      "id": "nTnzpwr",
-      "name": "",
-      "description": "",
-      "price": "",
-      "image": "",
-      "weight": "",
-      "stock": 0,
-      "totalItemSale": 0,
-      "category": ""
     }
   ],
   "cart": [
     {
       "id": 1,
-      "username": "test1",
+      "username": "admin2",
+      "orders": [],
+      "cartTotalQuantity": 0,
+      "grandTotal": 0
+    },
+    {
+      "id": 2,
+      "username": "admin3",
+      "orders": [],
+      "cartTotalQuantity": 0,
+      "grandTotal": 0
+    },
+    {
+      "id": 3,
+      "username": "gomer77",
+      "orders": [],
+      "cartTotalQuantity": 0,
+      "grandTotal": 0
+    },
+    {
+      "id": 4,
+      "username": "John77",
+      "orders": [],
+      "cartTotalQuantity": 0,
+      "grandTotal": 0
+    },
+    {
+      "id": 5,
+      "username": "gomer04",
       "orders": [
         {
           "id": "3",
@@ -619,8 +661,8 @@
           "description": "Little Finger Purple Eggplant",
           "category": "Fresh Produce",
           "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/eggplant_183b4189-5f74-4e09-b9f5-15f14d28febf_170x.png?v=1668482271",
-          "itemQuantity": 3,
-          "itemTotalPrice": 312
+          "itemQuantity": 1,
+          "itemTotalPrice": 104
         },
         {
           "id": "2",
@@ -629,8 +671,8 @@
           "description": "Organic Green Cabbage",
           "category": "Fresh Produce",
           "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/cabbage_5376e955-60ac-49ea-a1a6-240ab02c17b4_170x.png?v=1668482299",
-          "itemQuantity": 4,
-          "itemTotalPrice": 456
+          "itemQuantity": 1,
+          "itemTotalPrice": 114
         },
         {
           "id": "5",
@@ -639,38 +681,8 @@
           "description": "Yellow Lemon",
           "category": "Fresh Produce",
           "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/lemon2_350x.png?v=1662038264",
-          "itemQuantity": 4,
-          "itemTotalPrice": 292
-        },
-        {
-          "id": "1",
-          "name": "Onion",
-          "price": 292,
-          "description": "Red Onion",
-          "category": "Fresh Produce",
-          "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/onion_red_c7fe9b0d-a191-49e5-8aac-c61f5f09115e_350x.jpg?v=1668482222",
-          "itemQuantity": 2,
-          "itemTotalPrice": 584
-        },
-        {
-          "id": "4",
-          "name": "Banana",
-          "price": 300,
-          "description": "Lakatan",
-          "category": "Fresh Produce",
-          "image": "https://cdn.shopify.com/s/files/1/0250/3367/0740/products/banana-regular_c75f3a40-0d9a-4711-9364-2daf942d90e5_350x.png?v=1662038193",
           "itemQuantity": 1,
-          "itemTotalPrice": 300
-        },
-        {
-          "id": "9",
-          "name": "Tilapia",
-          "price": 80,
-          "description": "Fresh medium/large tilapia offers a distinct tasty flavor and fork-tender texture perfect for everyday meals.",
-          "category": "Fresh Meat and Seafood",
-          "image": "https://cdn.shopify.com/s/files/1/0024/9695/4415/products/IMG_7762_1024x1024.jpg?v=1664275949",
-          "itemQuantity": 1,
-          "itemTotalPrice": 80
+          "itemTotalPrice": 73
         },
         {
           "id": "8",
@@ -681,10 +693,20 @@
           "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/338038_eda8ef56-49f1-4402-a7bd-1395d4f332d8_512x.jpg?v=1669178187",
           "itemQuantity": 1,
           "itemTotalPrice": 210
+        },
+        {
+          "id": "12",
+          "name": "Tocino",
+          "price": 154.75,
+          "description": "Pampanga's Best The Original Tocino",
+          "category": "Frozen Goods",
+          "image": "https://cdn.shopify.com/s/files/1/0260/6877/9066/products/566547_816ae6de-5903-45ff-8bab-042cc01b6a8c_512x.jpg?v=1652343431",
+          "itemQuantity": 1,
+          "itemTotalPrice": 154.75
         }
       ],
-      "cartTotalQuantity": 16,
-      "grandTotal": 2234
+      "cartTotalQuantity": 5,
+      "grandTotal": 655.75
     }
   ]
 }

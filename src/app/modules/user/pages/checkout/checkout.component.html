@@ -1,3 +1,5 @@
+<br>
+<h1 style="text-align: center"><strong>Checkout</strong></h1>
 <table mat-table matSort [dataSource]="productsList.orders" class="mat-elevation-z8" *ngIf="productsList.length != 0">
 
   <ng-container matColumnDef="id">
@@ -35,8 +37,8 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
   <article class="table-footer" *ngIf="productsList.orders?.length != 0">
+    <h1><strong>Grand Total: {{grandTotal| currency:'PHP':'symbol'}}</strong></h1>
     <button (click)="placeOrder()" class="button-add" mat-button>Place Order</button>
-    <strong>Grand Total: {{grandTotal| currency:'PHP':'symbol'}}</strong>
   </article>
 
 <ng-container *ngIf="productsList.orders?.length == 0">

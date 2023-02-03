@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import { Router } from '@angular/router';
-import { CartService } from 'src/app/shared/services/cart.service';
 import { Product } from '../../models/product';
 import { ProductsService } from 'src/app/shared/services/products.service';
 
